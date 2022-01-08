@@ -1,9 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { Header } from "./components/header";
+import { Control } from "./components/control";
+import { Start } from "./components/start";
+import { FeaturedGames } from "./components/featuredgames";
+import { Jackpots } from "./components/jackpots";
+import { Footer } from "./components/footer";
+
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
+      <Header />
+      <Control />
+      <Start />
+      <FeaturedGames />
+      <Jackpots />
+      <Footer />
+
+      {/* 
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -17,7 +32,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
     </div>
   );
 }
